@@ -1,13 +1,9 @@
-PFont font1;
-
 int sum = 0;
-
 
 Die die1,die2,die3,die4,die5,die6,die7,die8,die9;
 
 void setup() {
   size(650, 650);
-  font1 = loadFont("Bahnschrift-48");
   noLoop();
   die1 = new Die(50, 50);
   die2 = new Die(250, 50);
