@@ -18,9 +18,7 @@ void setup() {
 }
 void draw() {
   background(255);
-  textFont(font1, 25);
   fill(0);
-  text("Total number dice:" + sum, 50, 600);
   die1.show();
   die2.show();
   die3.show();
@@ -30,6 +28,8 @@ void draw() {
   die7.show();
   die8.show();
   die9.show();
+  
+  text("Total: " + sum, 20,20);
 }
 void mousePressed() {
   die1.roll();
@@ -41,7 +41,9 @@ void mousePressed() {
   die7.roll();
   die8.roll();
   die9.roll();
+  sum = 0;
   redraw();
+ 
   
 }
 class Die {
